@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import React from 'react';
 import About from '../pages/About';
 
-describe('Router', () => {
+describe('Testing component About', () => {
   test('Test if there is h2', () => {
     render(<About />);
 
