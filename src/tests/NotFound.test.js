@@ -6,9 +6,9 @@ describe('Testing component NotFound', () => {
   test('Test if there is h2', () => {
     render(<NotFound />);
 
-    const aboutPokedex = screen.getByRole('heading',
+    const notFoundText = screen.getByRole('heading',
       { name: /Page requested not found/i, level: 2 });
-    expect(aboutPokedex).toBeInTheDocument();
+    expect(notFoundText).toBeInTheDocument();
   });
 
   test('Test if there is picture', () => {
