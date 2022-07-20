@@ -1,5 +1,4 @@
 import { render, screen } from '@testing-library/react';
-<<<<<<< HEAD
 import userEvent from '@testing-library/user-event';
 import { createMemoryHistory } from 'history';
 import React from 'react';
@@ -42,17 +41,5 @@ describe('Testing component Pokemon', () => {
     const dataTestId = screen.getByTestId('pokemon-type');
     expect(dataTestId).toBeDefined();
     expect(dataTestId).toHaveTextContent(/Electric/i);
-=======
-import React from 'react';
-// import App from '../App';
-import Pokemon from '../components/Pokemon';
-
-describe('Testing component Pokemon', () => {
-  test('Test link navegation on click ', () => {
-    render(<Pokemon />);
-
-    const pokemonLink = screen.getByRole('link', { name: ' /pokemons/25' });
-    expect(pokemonLink).toBeInTheDocument();
->>>>>>> 18cf12c8a57ceaab15ee7c39080f6c896bf7bd27
   });
 });
