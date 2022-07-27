@@ -82,7 +82,7 @@ describe('Testing Pokemon informations are show in screen', () => {
 
   test('test if will be user can be favorite the pokemon', () => {
     const history = createMemoryHistory();
-    const { container, getByLabelText } = render(
+    const { getByLabelText } = render(
       <Router
         history={ history }
       >
